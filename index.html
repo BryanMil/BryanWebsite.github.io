@@ -15,8 +15,6 @@
       --card-border: rgba(255, 255, 255, 0.08);
       --pill-bg: rgba(255, 255, 255, 0.06);
       --pill-border: rgba(255, 255, 255, 0.12);
-      --accent-blue: #2563eb;
-      --accent-blue-hover: #3b82f6;
       --text-main: #f8fafc;
       --text-muted: #94a3b8;
     }
@@ -48,7 +46,7 @@
       width: 100%;
     }
 
-    /* Pill-style top badge/navigation wrapper */
+    /* Pill-style top navigation bar */
     .nav-container {
       display: inline-flex;
       align-items: center;
@@ -88,7 +86,7 @@
       -webkit-text-fill-color: transparent;
     }
 
-    /* Pill Badges below heading */
+    /* Badge below heading */
     .badge-bar {
       display: flex;
       justify-content: center;
@@ -115,7 +113,7 @@
       width: 100%;
     }
 
-    /* Card container for the main photo */
+    /* Card container for the image */
     .image-card {
       position: relative;
       background: var(--card-bg);
@@ -139,49 +137,6 @@
       border-radius: 12px;
     }
 
-    /* Action Buttons */
-    .cta-container {
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      margin-top: 24px;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 12px 24px;
-      border-radius: 9999px;
-      font-size: 14px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: all 0.2s ease;
-    }
-
-    .btn-primary {
-      background-color: var(--accent-blue);
-      color: white;
-      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
-    }
-
-    .btn-primary:hover {
-      background-color: var(--accent-blue-hover);
-      box-shadow: 0 6px 20px rgba(37, 99, 235, 0.6);
-      transform: translateY(-1px);
-    }
-
-    .btn-secondary {
-      background: var(--pill-bg);
-      border: 1px solid var(--pill-border);
-      color: var(--text-main);
-    }
-
-    .btn-secondary:hover {
-      background: rgba(255, 255, 255, 0.12);
-      transform: translateY(-1px);
-    }
-
     footer {
       padding: 30px 20px;
       font-size: 13px;
@@ -192,9 +147,6 @@
     @media (max-width: 600px) {
       header h1 {
         font-size: 32px;
-      }
-      .cta-container {
-        flex-direction: column;
       }
     }
   </style>
@@ -223,14 +175,6 @@
   <main>
     <div class="image-card">
       <img src="./Images/Travis Heights.jpg" alt="Travis Heights">
-    </div>
-
-    <div class="cta-container">
-      <a href="./Videos.html" class="btn btn-primary">
-        View Video Portfolio
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-      </a>
-      <a href="./about.html" class="btn btn-secondary">Read Resume</a>
     </div>
   </main>
 
